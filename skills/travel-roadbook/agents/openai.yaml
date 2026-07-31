@@ -1,0 +1,4 @@
+interface:
+  display_name: "Travel Roadbook"
+  short_description: "Plan, verify, and publish executable travel roadbooks"
+  default_prompt: "Use $travel-roadbook to turn my flights, companions, priorities, and bookings into a verified, shareable travel roadbook."
