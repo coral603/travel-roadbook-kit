@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>挪威峡湾与北极圈示例 / Norway Fjords &amp; Arctic Demo</title>
+<style>
+:root{--ink:#18322f;--muted:#61716d;--cream:#f4f1ea;--paper:#fffdf8;--line:#d8ddd7;--accent:#e85d3f;--mint:#dcebe4;--nav-h:58px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 18px)}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Noto Sans SC","PingFang SC",sans-serif}
+a{color:inherit}.wrap{width:min(1040px,calc(100% - 32px));margin:auto}
+.hero{padding:72px 0 58px;background:linear-gradient(135deg,#18322f,#315b52);color:white}
+.kicker,.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:750}
+h1{font-family:Georgia,"Noto Serif SC",serif;font-size:clamp(2.35rem,7vw,5rem);line-height:1;margin:.18em 0}
+.hero p{max-width:720px;color:#d8e5df;font-size:1.08rem}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.meta span{border:1px solid #ffffff40;border-radius:999px;padding:7px 12px}
+.nav{position:sticky;top:0;z-index:20;background:#fffdf8ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;overflow:auto;scrollbar-width:none}.nav a{min-height:var(--nav-h);display:grid;place-items:center;padding:0 18px;text-decoration:none;color:var(--muted);white-space:nowrap;border-bottom:3px solid transparent}
+.nav a.active{color:var(--ink);border-bottom-color:var(--accent);font-weight:750}
+section{padding:58px 0}section h2{font-family:Georgia,"Noto Serif SC",serif;font-size:clamp(1.8rem,5vw,3rem);line-height:1.1;margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.mini-card,.day-card,.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 24px #18322f0a}
+.mini-card{display:grid;gap:3px}.mini-card span{font-weight:700}small,.muted{color:var(--muted)}
+.table-wrap{overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:18px}table{border-collapse:collapse;width:100%;min-width:620px}td,th{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line)}th{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+.days{display:grid;gap:20px}.day-card{padding:clamp(18px,4vw,30px)}.day-card header{display:flex;gap:16px;align-items:center}.day-card header p{margin:0;color:var(--muted)}.day-card h3{font-size:clamp(1.25rem,4vw,1.75rem);line-height:1.25;margin:0}
+.day-number{display:grid;place-items:center;flex:none;width:48px;height:48px;border-radius:50%;background:var(--accent);color:white;font-weight:800}.summary{font-size:1.06rem}
+dl{display:grid;grid-template-columns:1fr 1fr;gap:10px}dl div,.stay{display:grid;gap:3px;background:var(--mint);border-radius:13px;padding:14px}dt{color:var(--muted);font-size:.78rem;font-weight:700}dd{margin:0;font-weight:700}
+.sights{padding:0;list-style:none;display:grid;gap:12px}.sights li{display:grid;gap:3px;border-left:3px solid var(--accent);padding-left:13px}.notes b{display:block;font-size:.78rem;color:var(--muted)}.actions{margin:18px 0}
+.button{display:inline-flex;min-height:44px;align-items:center;padding:9px 14px;border-radius:999px;background:var(--ink);color:white;text-decoration:none;font-weight:700}.stay .button{justify-self:start;margin-top:8px}
+.sources{display:grid;gap:10px;padding-left:20px}.sources li small{display:block}footer{padding:28px 0 80px;color:var(--muted);border-top:1px solid var(--line)}
+@media(max-width:650px){.grid,dl{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1040px)}section{padding:42px 0}.hero{padding:52px 0 42px}}
+@media print{.nav,.button{display:none!important}body{background:white;font-size:10pt}.hero{background:white;color:var(--ink);padding:20px 0}.hero p{color:var(--muted)}section{padding:20px 0}.day-card,.mini-card,.panel{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="hero" id="top"><div class="wrap"><span class="kicker">Independent travel roadbook</span>
+<h1>挪威峡湾与北极圈示例 / Norway Fjords &amp; Arctic Demo</h1><p>匿名示例：铁路、峡湾自驾与北部公路旅行的组合，不代表实时可订状态。</p>
+<div class="meta"><span>2027-09-25 → 2027-10-02</span><span>Four adults · synthetic example</span></div></div></header>
+<nav class="nav" aria-label="Roadbook sections"><div class="wrap">
+<a href="#overview">总览 / Overview</a><a href="#transport">交通 / Transport</a>
+<a href="#days">每日 / Days</a><a href="#sources">核验 / Sources</a>
+</div></nav>
+<main>
+<section id="overview" data-section><div class="wrap"><span class="eyebrow">At a glance</span><h2>每日要点 / Daily overview</h2>
+<div class="table-wrap"><table><thead><tr><th>Date</th><th>Plan</th><th>Overnight</th></tr></thead><tbody><tr><td>09-25</td><td>奥斯陆至卑尔根 / Oslo to Bergen</td><td>卑尔根市中心 / Bergen city centre</td></tr><tr><td>09-26</td><td>卑尔根与弗洛姆 / Bergen and Flåm</td><td>弗洛姆 / Flåm</td></tr><tr><td>09-27</td><td>纳柔依峡湾与55号公路 / Nærøyfjord and Route 55</td><td>洛姆 / Lom</td></tr><tr><td>09-28</td><td>盖朗厄尔峡湾至洛恩 / Geirangerfjord to Loen</td><td>洛恩 / Loen</td></tr><tr><td>09-29</td><td>冰川地区返回卑尔根 / Glacier region to Bergen</td><td>卑尔根机场区域 / Bergen Airport area</td></tr><tr><td>09-30</td><td>埃沃内斯至斯沃尔韦尔 / Evenes to Svolvær</td><td>斯沃尔韦尔 / Svolvær</td></tr><tr><td>10-01</td><td>罗弗敦E10公路 / Lofoten E10 Road</td><td>莱克内斯 / Leknes</td></tr><tr><td>10-02</td><td>罗弗敦至比耶克维克 / Lofoten to Bjerkvik</td><td>比耶克维克 / Bjerkvik</td></tr></tbody></table></div></div></section>
+<section id="transport" data-section><div class="wrap"><span class="eyebrow">Fixed legs</span><h2>交通 / Transport</h2><div class="grid"><div class="mini-card"><b>2027-09-25</b>
+        <span>International arrival → Oslo Airport (OSL)</span><small>Morning · Synthetic example</small></div><div class="mini-card"><b>2027-09-30</b>
+        <span>Bergen Airport (BGO) → Harstad/Narvik Airport (EVE)</span><small>Morning · Verify the live timetable before booking</small></div></div></div></section>
+<section id="days" data-section><div class="wrap"><span class="eyebrow">Day by day</span><h2>每日行程 / Daily itinerary</h2><div class="days"><article class="day-card" id="day-1">
+          <header><span class="day-number">01</span><div>
+            <p>2027-09-25</p><h3>奥斯陆至卑尔根 / Oslo to Bergen</h3>
+          </div></header>
+          <p class="summary">Arrive in Norway and continue west by scenic railway, avoiding a separate city hotel change.</p>
+          <dl><div><dt>交通 / Transport</dt><dd>火车 / Train</dd></div>
+          <div><dt>住宿区域 / Overnight</dt><dd>卑尔根市中心 / Bergen city centre</dd></div></dl>
+          <ul class="sights"><li><strong>卑尔根铁路 / Bergen Railway</strong>
+            <span>A cross-country rail journey linking the capital region with the west coast.</span>
+            <small>Leave a generous buffer after an international arrival.</small></li></ul>
+          <div class="notes">
+            <p><b>预订 / Booking</b>Reserve a flexible train departure after flight arrival.</p>
+            <p><b>备选 / Fallback</b>If the flight is delayed, use the next protected or flexible rail option.</p>
+          </div>
+          <div class="actions"><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Oslo+Airport&amp;destination=Bergen" target="_blank" rel="noopener">路线地图 / Route map ↗</a></div>
+          <div class="stay">
+              <span class="eyebrow">当晚住宿 / Stay</span>
+              <strong>Demo Harbour Hotel</strong>
+              <span>Bergen city centre</span>
+              <small>Fictional property for demonstration.</small>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Bergen+city+centre" target="_blank" rel="noopener">住宿导航 / Navigate ↗</a>
+            </div>
+        </article><article class="day-card" id="day-2">
+          <header><span class="day-number">02</span><div>
+            <p>2027-09-26</p><h3>卑尔根与弗洛姆 / Bergen and Flåm</h3>
+          </div></header>
+          <p class="summary">A short Bergen morning followed by a scenic transfer to the inner fjord.</p>
+          <dl><div><dt>交通 / Transport</dt><dd>步行 + 自驾 / Walking + self-drive</dd></div>
+          <div><dt>住宿区域 / Overnight</dt><dd>弗洛姆 / Flåm</dd></div></dl>
+          <ul class="sights"><li><strong>布吕根 / Bryggen</strong>
+            <span>Historic harbour frontage and compact old-town lanes.</span>
+            <small>Go early for quieter streets.</small></li><li><strong>斯泰格斯坦观景台 / Stegastein Viewpoint</strong>
+            <span>Elevated view over Aurlandsfjord.</span>
+            <small>The approach road is narrow; check conditions.</small></li></ul>
+          <div class="notes">
+            <p><b>预订 / Booking</b>Collect the vehicle after the city walk.</p>
+            <p><b>备选 / Fallback</b>Skip the high viewpoint in poor visibility.</p>
+          </div>
+          <div class="actions"><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Bergen&amp;destination=Fl%C3%A5m&amp;waypoints=Stegastein+Viewpoint" target="_blank" rel="noopener">路线地图 / Route map ↗</a></div>
+          <div class="stay">
+              <span class="eyebrow">当晚住宿 / Stay</span>
+              <strong>Sample Fjord Lodge</strong>
+              <span>Flåm</span>
+              <small>Fictional property for demonstration.</small>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Fl%C3%A5m" target="_blank" rel="noopener">住宿导航 / Navigate ↗</a>
+            </div>
+        </article><article class="day-card" id="day-3">
+          <header><span class="day-number">03</span><div>
+            <p>2027-09-27</p><h3>纳柔依峡湾与55号公路 / Nærøyfjord and Route 55</h3>
+          </div></header>
+          <p class="summary">Experience the narrow fjord first, then begin the mountain-road crossing without backtracking.</p>
+          <dl><div><dt>交通 / Transport</dt><dd>游船 + 接驳 + 自驾 / Cruise + shuttle + self-drive</dd></div>
+          <div><dt>住宿区域 / Overnight</dt><dd>洛姆 / Lom</dd></div></dl>
+          <ul class="sights"><li><strong>纳柔依峡湾 / Nærøyfjord</strong>
+            <span>A narrow UNESCO-listed fjord arm with steep mountain walls.</span>
+            <small>Book the boat and return transfer as one timed chain.</small></li><li><strong>松恩山路55号 / Sognefjellet Route 55</strong>
+            <span>High-mountain scenic road linking the fjord region with Lom.</span>
+            <small>Seasonal access can change; verify with the road authority.</small></li></ul>
+          <div class="notes">
+            <p><b>预订 / Booking</b>Reserve the fjord cruise and coordinated shuttle.</p>
+            <p><b>备选 / Fallback</b>Use the lower all-season route if the mountain road closes.</p>
+          </div>
+          <div class="actions"><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Fl%C3%A5m&amp;destination=Lom,+Norway&amp;waypoints=Gaupne,+Norway" target="_blank" rel="noopener">路线地图 / Route map ↗</a></div>
+          <div class="stay">
+              <span class="eyebrow">当晚住宿 / Stay</span>
+              <strong>Example Mountain Inn</strong>
+              <span>Lom</span>
+              <small>Fictional property for demonstration.</small>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Lom,+Norway" target="_blank" rel="noopener">住宿导航 / Navigate ↗</a>
+            </div>
+        </article><article class="day-card" id="day-4">
+          <header><span class="day-number">04</span><div>
+            <p>2027-09-28</p><h3>盖朗厄尔峡湾至洛恩 / Geirangerfjord to Loen</h3>
+          </div></header>
+          <p class="summary">A full scenic day around Geiranger with a westward finish in Loen.</p>
+          <dl><div><dt>交通 / Transport</dt><dd>自驾 / Self-drive</dd></div>
+          <div><dt>住宿区域 / Overnight</dt><dd>洛恩 / Loen</dd></div></dl>
+          <ul class="sights"><li><strong>盖朗厄尔峡湾 / Geirangerfjord</strong>
+            <span>Classic fjord scenery with waterfalls and steep-sided viewpoints.</span>
+            <small>Allow time for slow traffic and photo stops.</small></li><li><strong>老鹰之路观景台 / Ørnesvingen Viewpoint</strong>
+            <span>Roadside panorama above Geiranger.</span>
+            <small>Parking is limited.</small></li></ul>
+          <div class="notes">
+            <p><b>预订 / Booking</b>No timed activity in the base plan.</p>
+            <p><b>备选 / Fallback</b>Prioritise lower viewpoints if cloud obscures the mountain roads.</p>
+          </div>
+          <div class="actions"><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Lom,+Norway&amp;destination=Loen,+Norway&amp;waypoints=Geiranger%7C%C3%98rnesvingen+Viewpoint" target="_blank" rel="noopener">路线地图 / Route map ↗</a></div>
+          <div class="stay">
+              <span class="eyebrow">当晚住宿 / Stay</span>
+              <strong>Demo Valley Rooms</strong>
+              <span>Loen</span>
+              <small>Fictional property for demonstration.</small>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Loen,+Norway" target="_blank" rel="noopener">住宿导航 / Navigate ↗</a>
+            </div>
+        </article><article class="day-card" id="day-5">
+          <header><span class="day-number">05</span><div>
+            <p>2027-09-29</p><h3>冰川地区返回卑尔根 / Glacier region to Bergen</h3>
+          </div></header>
+          <p class="summary">Visit an accessible arm of Jostedalsbreen before the final west-coast drive.</p>
+          <dl><div><dt>交通 / Transport</dt><dd>自驾 / Self-drive</dd></div>
+          <div><dt>住宿区域 / Overnight</dt><dd>卑尔根机场区域 / Bergen Airport area</dd></div></dl>
+          <ul class="sights"><li><strong>约斯特谷冰原 / Jostedalsbreen</strong>
+            <span>Mainland Europe&#x27;s largest ice cap, experienced from a safe public approach.</span>
+            <small>Never walk onto glacier ice without a qualified guide.</small></li></ul>
+          <div class="notes">
+            <p><b>预订 / Booking</b>Confirm vehicle return time.</p>
+            <p><b>备选 / Fallback</b>Use a glacier museum or shorter valley walk in severe weather.</p>
+          </div>
+          <div class="actions"><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Loen,+Norway&amp;destination=Bergen+Airport&amp;waypoints=Jostedalsbreen+National+Park" target="_blank" rel="noopener">路线地图 / Route map ↗</a></div>
+          <div class="stay">
+              <span class="eyebrow">当晚住宿 / Stay</span>
+              <strong>Sample Airport Hotel</strong>
+              <span>Bergen Airport area</span>
+              <small>Fictional property for demonstration.</small>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Bergen+Airport" target="_blank" rel="noopener">住宿导航 / Navigate ↗</a>
+            </div>
+        </article><article class="day-card" id="day-6">
+          <header><span class="day-number">06</span><div>
+            <p>2027-09-30</p><h3>埃沃内斯至斯沃尔韦尔 / Evenes to Svolvær</h3>
+          </div></header>
+          <p class="summary">Fly north, collect a vehicle, and use a light first day for eastern Lofoten.</p>
+          <dl><div><dt>交通 / Transport</dt><dd>航班 + 自驾 / Flight + self-drive</dd></div>
+          <div><dt>住宿区域 / Overnight</dt><dd>斯沃尔韦尔 / Svolvær</dd></div></dl>
+          <ul class="sights"><li><strong>沃甘教堂 / Vågan Church</strong>
+            <span>Landmark wooden church near Kabelvåg.</span>
+            </li><li><strong>亨宁斯韦尔 / Henningsvær</strong>
+            <span>Fishing village spread across small islands.</span>
+            <small>Use marked parking; do not obstruct local roads.</small></li></ul>
+          <div class="notes">
+            <p><b>预订 / Booking</b>Coordinate flight arrival and rental opening hours.</p>
+            <p><b>备选 / Fallback</b>Drive directly to Svolvær if the flight is delayed.</p>
+          </div>
+          <div class="actions"><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Harstad%2FNarvik+Airport&amp;destination=Svolv%C3%A6r&amp;waypoints=V%C3%A5gan+Church%7CHenningsv%C3%A6r" target="_blank" rel="noopener">路线地图 / Route map ↗</a></div>
+          <div class="stay">
+              <span class="eyebrow">当晚住宿 / Stay</span>
+              <strong>Example Quayside Stay</strong>
+              <span>Svolvær</span>
+              <small>Fictional property for demonstration.</small>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Svolv%C3%A6r" target="_blank" rel="noopener">住宿导航 / Navigate ↗</a>
+            </div>
+        </article><article class="day-card" id="day-7">
+          <header><span class="day-number">07</span><div>
+            <p>2027-10-01</p><h3>罗弗敦E10公路 / Lofoten E10 Road</h3>
+          </div></header>
+          <p class="summary">A westbound E10 day with beaches and fishing villages, ending centrally to reduce the next day&#x27;s drive.</p>
+          <dl><div><dt>交通 / Transport</dt><dd>自驾 / Self-drive</dd></div>
+          <div><dt>住宿区域 / Overnight</dt><dd>莱克内斯 / Leknes</dd></div></dl>
+          <ul class="sights"><li><strong>豪克兰海滩 / Haukland Beach</strong>
+            <span>Pale sand and mountain scenery on Vestvågøy.</span>
+            </li><li><strong>雷讷 / Reine</strong>
+            <span>Iconic fishing-village setting in western Lofoten.</span>
+            <small>Keep the schedule flexible for wind and rain.</small></li></ul>
+          <div class="notes">
+            <p><b>预订 / Booking</b>Stay near Leknes for route efficiency.</p>
+            <p><b>备选 / Fallback</b>Shorten the western loop and prioritise Haukland.</p>
+          </div>
+          <div class="actions"><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Svolv%C3%A6r&amp;destination=Leknes&amp;waypoints=Haukland+Beach%7CReine" target="_blank" rel="noopener">路线地图 / Route map ↗</a></div>
+          <div class="stay">
+              <span class="eyebrow">当晚住宿 / Stay</span>
+              <strong>Demo Central Rooms</strong>
+              <span>Leknes</span>
+              <small>Fictional property for demonstration.</small>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Leknes" target="_blank" rel="noopener">住宿导航 / Navigate ↗</a>
+            </div>
+        </article><article class="day-card" id="day-8">
+          <header><span class="day-number">08</span><div>
+            <p>2027-10-02</p><h3>罗弗敦至比耶克维克 / Lofoten to Bjerkvik</h3>
+          </div></header>
+          <p class="summary">Keep the morning flexible, then divide the transfer toward Senja into a comfortable first stage.</p>
+          <dl><div><dt>交通 / Transport</dt><dd>自驾 / Self-drive</dd></div>
+          <div><dt>住宿区域 / Overnight</dt><dd>比耶克维克 / Bjerkvik</dd></div></dl>
+          <ul class="sights"><li><strong>E10国家景观公路 / E10 National Scenic Route</strong>
+            <span>Return east through changing coastal and mountain scenery.</span>
+            <small>This is a transfer day; avoid adding a long hike.</small></li></ul>
+          <div class="notes">
+            <p><b>预订 / Booking</b>Choose accommodation with straightforward parking.</p>
+            <p><b>备选 / Fallback</b>Stop earlier near Evenes if conditions deteriorate.</p>
+          </div>
+          <div class="actions"><a class="button" href="https://www.google.com/maps/dir/?api=1&amp;origin=Leknes&amp;destination=Bjerkvik" target="_blank" rel="noopener">路线地图 / Route map ↗</a></div>
+          <div class="stay">
+              <span class="eyebrow">当晚住宿 / Stay</span>
+              <strong>Sample Roadside Inn</strong>
+              <span>Bjerkvik</span>
+              <small>Fictional property for demonstration.</small>
+              <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Bjerkvik" target="_blank" rel="noopener">住宿导航 / Navigate ↗</a>
+            </div>
+        </article></div></div></section>
+<section id="sources" data-section><div class="wrap"><span class="eyebrow">Verification log</span><h2>核验来源 / Sources</h2><div class="panel"><ul class="sources"><li><a href="https://www.nasjonaleturistveger.no/en/" target="_blank" rel="noopener">Norwegian Scenic Routes</a><small>checked 2026-07-31</small></li><li><a href="https://www.vegvesen.no/en/" target="_blank" rel="noopener">Norwegian Public Roads Administration</a><small>checked 2026-07-31</small></li></ul></div></div></section>
+</main><footer><div class="wrap">Generated with Travel Roadbook Kit. Recheck live schedules, access and weather before departure.</div></footer>
+<script>
+const links=[...document.querySelectorAll('.nav a')], sections=[...document.querySelectorAll('[data-section]')];
+function setActive(id){links.forEach(a=>{const on=a.hash==='#'+id;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});const active=links.find(a=>a.classList.contains('active'));active?.scrollIntoView({block:'nearest',inline:'center'})}
+links.forEach(a=>a.addEventListener('click',()=>setActive(a.hash.slice(1))));
+let scheduled=false;
+function updateFromScroll(){scheduled=false;const marker=document.querySelector('.nav').offsetHeight+28;let current=sections[0];for(const section of sections){if(section.getBoundingClientRect().top<=marker)current=section}if(innerHeight+scrollY>=document.documentElement.scrollHeight-4)current=sections[sections.length-1];setActive(current.id)}
+addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(updateFromScroll)}},{passive:true});
+addEventListener('hashchange',()=>{const id=location.hash.slice(1);if(sections.some(s=>s.id===id))setActive(id)});
+setActive(location.hash.slice(1)||'overview');updateFromScroll();
+</script></body></html>

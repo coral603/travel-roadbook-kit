@@ -1,0 +1,255 @@
+{
+  "trip": {
+    "title": "挪威峡湾与北极圈示例 / Norway Fjords & Arctic Demo",
+    "subtitle": "匿名示例：铁路、峡湾自驾与北部公路旅行的组合，不代表实时可订状态。",
+    "start_date": "2027-09-25",
+    "end_date": "2027-10-02",
+    "travellers": "Four adults · synthetic example",
+    "language": "zh-CN"
+  },
+  "flights": [
+    {
+      "date": "2027-09-25",
+      "route": "International arrival → Oslo Airport (OSL)",
+      "time": "Morning",
+      "note": "Synthetic example"
+    },
+    {
+      "date": "2027-09-30",
+      "route": "Bergen Airport (BGO) → Harstad/Narvik Airport (EVE)",
+      "time": "Morning",
+      "note": "Verify the live timetable before booking"
+    }
+  ],
+  "days": [
+    {
+      "date": "2027-09-25",
+      "title": "奥斯陆至卑尔根 / Oslo to Bergen",
+      "overnight": "卑尔根市中心 / Bergen city centre",
+      "transport": "火车 / Train",
+      "summary": "Arrive in Norway and continue west by scenic railway, avoiding a separate city hotel change.",
+      "sights": [
+        {
+          "name": "卑尔根铁路 / Bergen Railway",
+          "description": "A cross-country rail journey linking the capital region with the west coast.",
+          "note": "Leave a generous buffer after an international arrival."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Oslo+Airport&destination=Bergen",
+      "booking": "Reserve a flexible train departure after flight arrival.",
+      "fallback": "If the flight is delayed, use the next protected or flexible rail option."
+    },
+    {
+      "date": "2027-09-26",
+      "title": "卑尔根与弗洛姆 / Bergen and Flåm",
+      "overnight": "弗洛姆 / Flåm",
+      "transport": "步行 + 自驾 / Walking + self-drive",
+      "summary": "A short Bergen morning followed by a scenic transfer to the inner fjord.",
+      "sights": [
+        {
+          "name": "布吕根 / Bryggen",
+          "description": "Historic harbour frontage and compact old-town lanes.",
+          "note": "Go early for quieter streets."
+        },
+        {
+          "name": "斯泰格斯坦观景台 / Stegastein Viewpoint",
+          "description": "Elevated view over Aurlandsfjord.",
+          "note": "The approach road is narrow; check conditions."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Bergen&destination=Fl%C3%A5m&waypoints=Stegastein+Viewpoint",
+      "booking": "Collect the vehicle after the city walk.",
+      "fallback": "Skip the high viewpoint in poor visibility."
+    },
+    {
+      "date": "2027-09-27",
+      "title": "纳柔依峡湾与55号公路 / Nærøyfjord and Route 55",
+      "overnight": "洛姆 / Lom",
+      "transport": "游船 + 接驳 + 自驾 / Cruise + shuttle + self-drive",
+      "summary": "Experience the narrow fjord first, then begin the mountain-road crossing without backtracking.",
+      "sights": [
+        {
+          "name": "纳柔依峡湾 / Nærøyfjord",
+          "description": "A narrow UNESCO-listed fjord arm with steep mountain walls.",
+          "note": "Book the boat and return transfer as one timed chain."
+        },
+        {
+          "name": "松恩山路55号 / Sognefjellet Route 55",
+          "description": "High-mountain scenic road linking the fjord region with Lom.",
+          "note": "Seasonal access can change; verify with the road authority."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Fl%C3%A5m&destination=Lom,+Norway&waypoints=Gaupne,+Norway",
+      "booking": "Reserve the fjord cruise and coordinated shuttle.",
+      "fallback": "Use the lower all-season route if the mountain road closes."
+    },
+    {
+      "date": "2027-09-28",
+      "title": "盖朗厄尔峡湾至洛恩 / Geirangerfjord to Loen",
+      "overnight": "洛恩 / Loen",
+      "transport": "自驾 / Self-drive",
+      "summary": "A full scenic day around Geiranger with a westward finish in Loen.",
+      "sights": [
+        {
+          "name": "盖朗厄尔峡湾 / Geirangerfjord",
+          "description": "Classic fjord scenery with waterfalls and steep-sided viewpoints.",
+          "note": "Allow time for slow traffic and photo stops."
+        },
+        {
+          "name": "老鹰之路观景台 / Ørnesvingen Viewpoint",
+          "description": "Roadside panorama above Geiranger.",
+          "note": "Parking is limited."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Lom,+Norway&destination=Loen,+Norway&waypoints=Geiranger%7C%C3%98rnesvingen+Viewpoint",
+      "booking": "No timed activity in the base plan.",
+      "fallback": "Prioritise lower viewpoints if cloud obscures the mountain roads."
+    },
+    {
+      "date": "2027-09-29",
+      "title": "冰川地区返回卑尔根 / Glacier region to Bergen",
+      "overnight": "卑尔根机场区域 / Bergen Airport area",
+      "transport": "自驾 / Self-drive",
+      "summary": "Visit an accessible arm of Jostedalsbreen before the final west-coast drive.",
+      "sights": [
+        {
+          "name": "约斯特谷冰原 / Jostedalsbreen",
+          "description": "Mainland Europe's largest ice cap, experienced from a safe public approach.",
+          "note": "Never walk onto glacier ice without a qualified guide."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Loen,+Norway&destination=Bergen+Airport&waypoints=Jostedalsbreen+National+Park",
+      "booking": "Confirm vehicle return time.",
+      "fallback": "Use a glacier museum or shorter valley walk in severe weather."
+    },
+    {
+      "date": "2027-09-30",
+      "title": "埃沃内斯至斯沃尔韦尔 / Evenes to Svolvær",
+      "overnight": "斯沃尔韦尔 / Svolvær",
+      "transport": "航班 + 自驾 / Flight + self-drive",
+      "summary": "Fly north, collect a vehicle, and use a light first day for eastern Lofoten.",
+      "sights": [
+        {
+          "name": "沃甘教堂 / Vågan Church",
+          "description": "Landmark wooden church near Kabelvåg."
+        },
+        {
+          "name": "亨宁斯韦尔 / Henningsvær",
+          "description": "Fishing village spread across small islands.",
+          "note": "Use marked parking; do not obstruct local roads."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Harstad%2FNarvik+Airport&destination=Svolv%C3%A6r&waypoints=V%C3%A5gan+Church%7CHenningsv%C3%A6r",
+      "booking": "Coordinate flight arrival and rental opening hours.",
+      "fallback": "Drive directly to Svolvær if the flight is delayed."
+    },
+    {
+      "date": "2027-10-01",
+      "title": "罗弗敦E10公路 / Lofoten E10 Road",
+      "overnight": "莱克内斯 / Leknes",
+      "transport": "自驾 / Self-drive",
+      "summary": "A westbound E10 day with beaches and fishing villages, ending centrally to reduce the next day's drive.",
+      "sights": [
+        {
+          "name": "豪克兰海滩 / Haukland Beach",
+          "description": "Pale sand and mountain scenery on Vestvågøy."
+        },
+        {
+          "name": "雷讷 / Reine",
+          "description": "Iconic fishing-village setting in western Lofoten.",
+          "note": "Keep the schedule flexible for wind and rain."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Svolv%C3%A6r&destination=Leknes&waypoints=Haukland+Beach%7CReine",
+      "booking": "Stay near Leknes for route efficiency.",
+      "fallback": "Shorten the western loop and prioritise Haukland."
+    },
+    {
+      "date": "2027-10-02",
+      "title": "罗弗敦至比耶克维克 / Lofoten to Bjerkvik",
+      "overnight": "比耶克维克 / Bjerkvik",
+      "transport": "自驾 / Self-drive",
+      "summary": "Keep the morning flexible, then divide the transfer toward Senja into a comfortable first stage.",
+      "sights": [
+        {
+          "name": "E10国家景观公路 / E10 National Scenic Route",
+          "description": "Return east through changing coastal and mountain scenery.",
+          "note": "This is a transfer day; avoid adding a long hike."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&origin=Leknes&destination=Bjerkvik",
+      "booking": "Choose accommodation with straightforward parking.",
+      "fallback": "Stop earlier near Evenes if conditions deteriorate."
+    }
+  ],
+  "stays": [
+    {
+      "night": "2027-09-25",
+      "name": "Demo Harbour Hotel",
+      "area": "Bergen city centre",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Bergen+city+centre",
+      "note": "Fictional property for demonstration."
+    },
+    {
+      "night": "2027-09-26",
+      "name": "Sample Fjord Lodge",
+      "area": "Flåm",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Fl%C3%A5m",
+      "note": "Fictional property for demonstration."
+    },
+    {
+      "night": "2027-09-27",
+      "name": "Example Mountain Inn",
+      "area": "Lom",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Lom,+Norway",
+      "note": "Fictional property for demonstration."
+    },
+    {
+      "night": "2027-09-28",
+      "name": "Demo Valley Rooms",
+      "area": "Loen",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Loen,+Norway",
+      "note": "Fictional property for demonstration."
+    },
+    {
+      "night": "2027-09-29",
+      "name": "Sample Airport Hotel",
+      "area": "Bergen Airport area",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Bergen+Airport",
+      "note": "Fictional property for demonstration."
+    },
+    {
+      "night": "2027-09-30",
+      "name": "Example Quayside Stay",
+      "area": "Svolvær",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Svolv%C3%A6r",
+      "note": "Fictional property for demonstration."
+    },
+    {
+      "night": "2027-10-01",
+      "name": "Demo Central Rooms",
+      "area": "Leknes",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Leknes",
+      "note": "Fictional property for demonstration."
+    },
+    {
+      "night": "2027-10-02",
+      "name": "Sample Roadside Inn",
+      "area": "Bjerkvik",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Bjerkvik",
+      "note": "Fictional property for demonstration."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Norwegian Scenic Routes",
+      "url": "https://www.nasjonaleturistveger.no/en/",
+      "checked_on": "2026-07-31"
+    },
+    {
+      "label": "Norwegian Public Roads Administration",
+      "url": "https://www.vegvesen.no/en/",
+      "checked_on": "2026-07-31"
+    }
+  ]
+}
