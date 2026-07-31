@@ -1,0 +1,53 @@
+{
+  "trip": {
+    "title": "Trip title",
+    "subtitle": "Short route summary",
+    "start_date": "2027-01-01",
+    "end_date": "2027-01-03",
+    "travellers": "Four adults",
+    "language": "zh-CN"
+  },
+  "flights": [
+    {
+      "date": "2027-01-01",
+      "route": "Origin (AAA) → Destination (BBB)",
+      "time": "08:00–10:00",
+      "note": "Booked"
+    }
+  ],
+  "days": [
+    {
+      "date": "2027-01-01",
+      "title": "抵达城市 / Arrival city",
+      "overnight": "城市中心 / City centre",
+      "transport": "飞机 + 公共交通 / Flight + public transport",
+      "summary": "Arrival and a light orientation walk.",
+      "sights": [
+        {
+          "name": "示例景点 / Sample sight",
+          "description": "Why it is worth visiting and how long to allow.",
+          "note": "Weather or access note."
+        }
+      ],
+      "map_url": "https://www.google.com/maps/dir/?api=1&destination=City",
+      "booking": "Reserve accommodation",
+      "fallback": "Indoor museum"
+    }
+  ],
+  "stays": [
+    {
+      "night": "2027-01-01",
+      "name": "Sample Central Hotel",
+      "area": "City centre",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=City+centre",
+      "note": "Synthetic example; no real booking data."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Official transport operator",
+      "url": "https://example.com",
+      "checked_on": "2026-07-31"
+    }
+  ]
+}
