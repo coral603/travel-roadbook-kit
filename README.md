@@ -1,8 +1,10 @@
 # Travel Roadbook Kit
 
-> 把零散的机票、路线想法、住宿订单和多人意见，整理成一份经过核验、能真正带上路的旅行路书。
+> 从几个模糊想法开始，规划一趟路线合理、衔接顺畅、真正走得通的复杂自由行。
 
-一套隐私优先的 Codex Skill 与确定性生成工具，适合自由行、自驾、多城市旅行和多人共同决策。它不只生成“去哪玩”的清单，还会处理路线取舍、真实地图核验、交通衔接、住宿位置检查、移动端路书和签证材料。
+Travel Roadbook Kit 是一套面向复杂自由行的 Codex Skill。它会和你一起梳理同行人的偏好、时间、预算、驾驶能力、行李和已订项目，比较不同路线结构；再用真实地图、交通时刻、季节道路和运营规则逐段核验，把“看起来不错”的攻略推进到“实际走得通”的行程。
+
+路线确认后，它还能把同一套可靠行程整理成方便多人讨论、继续预订、旅途中随时查阅和申请签证的不同材料。路书是最终呈现之一，核心价值是帮助你完成前面那段更难的规划与验证工作。
 
 ## 成品预览 / Preview
 
@@ -86,9 +88,9 @@ git diff --cached
 
 ## English
 
-Travel Roadbook Kit is a privacy-first Codex Skill and a small set of deterministic tools for turning flights, group preferences, route ideas, and bookings into a verified travel roadbook.
+Travel Roadbook Kit is a Codex Skill for planning complex independent trips and verifying that they can work in the real world.
 
-It supports the difficult middle of independent-trip planning: comparing route structures, checking whether a plan works on real maps and real dates, reconciling booked accommodation, and publishing a mobile-friendly offline guide.
+It helps reconcile group preferences, time, budget, driving limits, luggage and existing bookings; compare fundamentally different route structures; and verify each leg against real maps, schedules, seasonal roads and operator rules. Once the itinerary is sound, it can turn the same plan into a mobile roadbook, booking checklist, offline guide or visa itinerary.
 
 ### Included
 
